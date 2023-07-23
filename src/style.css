@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Bulgatti";
+    src: url("Bulgatti-xgMV.ttf");
+    font-style: normal;
+    font-weight: ;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: lightgrey;
+    font-family: "Bulgatti";
+    font-size: 1.2rem;
+}
+
+
+
+body{
+    background-color: black;
+    background-image: url(./background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #content
 {
     display: flex;
@@ -5,12 +30,40 @@
     align-items: center;
 
 }
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 66%;
+    padding: 40px;
+}
+.tab
+{
+    font-size: 36px;
+}
 p{
     text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.1ch;
+    
 }
 
 img
 {
     border-radius: 10px;
     max-width: 500px;
+}
+.section
+{
+    background-color: rgba(53, 50, 54, 0.5);
+    max-width: 66%;
+    border-radius: 16px;
+    padding: 20px;
+}
+.section p{
+    
 }
