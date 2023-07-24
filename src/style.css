@@ -40,9 +40,32 @@ nav{
     width: 66%;
     padding: 40px;
 }
-.tab
-{
+nav {
+    position: relative;
+  }
+  
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
     font-size: 36px;
+    position: relative;
+}
+
+.tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Set the initial left position to the midpoint */
+    transform: translateX(-50%); /* Center the underline */
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.tab-active::after {
+    width: 100%;
 }
 p{
     text-align: center;
