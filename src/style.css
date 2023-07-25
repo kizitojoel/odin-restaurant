@@ -4,13 +4,14 @@
     font-style: normal;
     font-weight: ;
 }
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 *
 {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     color: lightgrey;
-    font-family: "Bulgatti";
+    font-family: "Handlee";
     font-size: 1.2rem;
 }
 
