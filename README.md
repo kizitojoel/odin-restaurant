@@ -1,6 +1,6 @@
 # Odin Web Development Project - Restaurant Page
 
-## Live Site : [Joel's Bistro](kizitojoel.github.io/odin-restaurant/)
+## Live Site : [Joel's Bistro](https://kizitojoel.github.io/odin-restaurant/)
 
 ![Image of my website](./website-image.png)
 
