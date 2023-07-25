@@ -5,8 +5,8 @@
 ![Image of my website](./website-image.png)
 
 ## Stage 1 | Webpack setup and template development
-I ran npm init to initailise the package.json folder and keep track of the installed packages
-I edited the basic layout of my webpage and downloaded different fonts and backgrounds and tried them out
+I ran npm init to initailise the package.json folder and keep track of the installed packages.
+I edited the basic layout of my webpage and downloaded different fonts and backgrounds and tried them out.
 
 ![Image of my directory Setup](./folder-setup.png)
 
@@ -72,7 +72,7 @@ Using webpack and publishing to GitHub pages needs a different approach since gh
 Here is a link to the longer gist : [Publishing from a GitHub subdirectory](https://gist.github.com/cobyism/4730490)
 
 ### How to do it
-- Assuming my sub directory is called and there is an index.html file in the subdirectory, ensure all files are added and committed. Then run
+- Assuming my sub directory is called dist and there is an index.html file in the subdirectory, ensure all files are added and committed. Then run
 ```git
 git subtree push --prefix dist origin gh-pages
 ```
