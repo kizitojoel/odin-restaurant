@@ -21,6 +21,7 @@ body{
     background-image: url(./background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed ;
 }
 
 #content
@@ -28,6 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 
 }
 h1 {
@@ -40,10 +42,6 @@ nav{
     width: 66%;
     padding: 40px;
 }
-nav {
-    position: relative;
-  }
-  
 .tab {
     cursor: pointer;
     padding: 10px;
@@ -62,6 +60,7 @@ nav {
     height: 2px;
     background-color: white;
     transition: width 0.3s ease;
+    z-index: 1;
 }
 
 .tab-active::after {
@@ -87,6 +86,86 @@ img
     border-radius: 16px;
     padding: 20px;
 }
-.section p{
-    
+.menu
+{
+    width: 66%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    background-color: rgba(53, 50, 54, 0.5);
+    padding: 12px;
+    border-radius: 12px;
+}
+.menu h1{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.line
+{
+    height: 3px;
+    background-color: white;
+    width: 90%;
+    content: "";
+    align-self: center;
+}
+.menu p{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    padding-right: 24px;
+
+}
+.price
+{
+    font-size: 36px;
+}
+.menu img{
+    width: 400px;
+}
+form
+{
+    background-color: rgba(53, 50, 54, 0.5);
+    width: 66%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+
+}
+.form-row{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0px;
+}
+
+.input
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input
+{
+    padding: 4px;
+    line-height: 3;
+    color: black;
+}
+form button{
+    padding: 12px;
+    color: black;
+}
+form button:hover
+{
+    background-color: green;
 }

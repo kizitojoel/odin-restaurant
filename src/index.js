@@ -1,6 +1,7 @@
 import "./style.css"
 import { generateHomepage } from "./homepage";
 import { generateMenupage } from "./menu";
+import { generateContactpage } from "./contact";
 
 // Create the main content div and append it to the body
 const contentDiv = document.createElement("div");
@@ -21,7 +22,6 @@ homeTab.classList.add("tab", "tab-active");
 const menuTab = document.createElement("div");
 menuTab.textContent = "Menu"
 menuTab.classList.add("tab");
-menuTab.addEventListener('click', generateMenupage);
 
 const contactTab = document.createElement("div");
 contactTab.textContent = "Contact"
@@ -42,11 +42,25 @@ function clearContent(){
 // Add event listeners to the tabs
 const tabs = document.querySelectorAll(".tab");
 tabs.forEach(tab => {
+    console.log(tab);
     tab.addEventListener('click', function() {
         if (!tab.classList.contains("tab-active")){
             tabs.forEach(tab => tab.classList.remove("tab-active"));
             this.classList.add("tab-active");
             clearContent();
+            switch (tab) {
+                case menuTab:
+                    generateMenupage();
+                    break;
+                
+                case contactTab:
+                    generateContactpage();
+                    break;
+            
+                default:
+                    generateHomepage();
+                    break;
+            }
         }
     })
 })
